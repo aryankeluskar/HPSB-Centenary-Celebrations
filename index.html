@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 100 years of Legacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(255, 253, 228);
+        }
+        
+        div#his {
+            background-color: rgb(245, 243, 218);
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            /* background-image: url('abuotback.jpg'); */
+        }
+        
+        img#header {
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0em;
+            width: 100%;
+            z-index: 5;
+        }
+        
+        h2,
+        p {
+            padding: 1em;
+            color: black;
+            font-family: 'Source Serif Pro', serif;
+            font-weight: 400;
+            font-size: 1.3em;
+            width: 80%;
+            margin-right: 0;
+            /* float: r; */
+        }
+        
+        h2,
+        h3 {
+            font-weight: 400;
+            height: 7em;
+            width: fit-content;
+            float: left;
+            color: rgb(9, 14, 54);
+            font-size: 2em;
+            width: 20%;
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        #events {
+            background-color: rgba(255, 253, 228, 0.651) !important;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .wrapper {
+            background: #171c24;
+            position: fixed;
+            width: 100%;
+        }
+        
+        .wrapper nav {
+            position: relative;
+            display: flex;
+            max-width: calc(100% - 200px);
+            margin: 0 auto;
+            height: 70px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        nav .content {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav .content .links {
+            margin-left: 80px;
+            display: flex;
+        }
+        
+        .content .title a {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        .content .links li {
+            list-style: none;
+            line-height: 70px;
+        }
+        
+        .content .links li a,
+        .content .links li label {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 9px 17px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .content .links li label {
+            display: none;
+        }
+        
+        .content .links li a:hover,
+        .content .links li label:hover {
+            background: #323c4e;
+        }
+        
+        .wrapper .menu-icon {
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            line-height: 70px;
+            width: 70px;
+            text-align: center;
+        }
+        
+        .wrapper .menu-icon {
+            display: none;
+        }
+        
+        .wrapper input[type="checkbox"] {
+            display: none;
+        }
+        
+        .content .links ul {
+            position: absolute;
+            background: #171c24;
+            top: 80px;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .content .links li:hover>ul {
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+        }
+        
+        .content .links ul li a {
+            display: block;
+            width: 100%;
+            line-height: 30px;
+            border-radius: 0px!important;
+        }
+        
+        .content .links ul ul {
+            position: absolute;
+            top: 0;
+            right: calc(-100% + 8px);
+        }
+        
+        .content .links ul li {
+            position: relative;
+        }
+        
+        .content .links ul li:hover ul {
+            top: 0;
+        }
+        /* Responsive code start */
+        
+        @media screen and (max-width: 1250px) {
+            .wrapper nav {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+            nav .content .links {
+                margin-left: 30px;
+            }
+            .content .links li a {
+                padding: 8px 13px;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .wrapper .menu-icon {
+                display: block;
+            }
+            .wrapper #show-menu:checked~.menu-icon i::before {
+                content: "\f00d";
+            }
+            nav .content .links {
+                display: block;
+                position: fixed;
+                background: #14181f;
+                height: 100%;
+                width: 100%;
+                top: 70px;
+                left: -100%;
+                margin-left: 0;
+                max-width: 350px;
+                overflow-y: auto;
+                padding-bottom: 100px;
+                transition: all 0.3s ease;
+            }
+            nav #show-menu:checked~.content .links {
+                left: 0%;
+            }
+            .content .links li {
+                margin: 15px 20px;
+            }
+            .content .links li a,
+            .content .links li label {
+                line-height: 40px;
+                font-size: 20px;
+                display: block;
+                padding: 8px 18px;
+                cursor: pointer;
+            }
+            .content .links li a.desktop-link {
+                display: none;
+            }
+            /* dropdown responsive code start */
+            .content .links ul,
+            .content .links ul ul {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                background: none;
+                max-height: 0px;
+                overflow: hidden;
+            }
+            .content .links #show-features:checked~ul,
+            .content .links #show-services:checked~ul,
+            .content .links #show-items:checked~ul {
+                max-height: 100vh;
+            }
+            .content .links ul li {
+                margin: 7px 20px;
+            }
+            .content .links ul li a {
+                font-size: 18px;
+                line-height: 30px;
+                border-radius: 5px!important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="title"><a href="#">Centenary Celebrations</a></div>
+                <ul class="links">
+                    <li><a href="#his">History</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#">Vision and Mission</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Future</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="site">
+        <!-- <img src="abuotback.jpg" alt="" id="back"> -->
+        <img src="1px.png" id="header" alt="">
+
+    </div>
+    <div id="his">
+        <h2> History </h2>
+        <p id="history">
+            In 1923, we welcomed our very first students in The erstwhile Jagirdar's College. After the abolition of the Jagirdari system in 1950, the Government decided that the College should be converted to an independent Public School, thus throwing open its
+            portals to all, irrespective of class or creed. The Jagirdar’s College was re-organised in 1951 as The Hyderabad Public School and was affiliated as a member of the Indian Public Schools Conference (IPSC). In 1952, the former President of
+            India, late Dr Sarvepalli Radhakrishnan, was appointed as the first Chairman of The Hyderabad Public School Society, Mr John W.R. Kempe was appointed as the first Principal of the School and in 1962, Mr. Kuruvilla Jacob was appointed as the
+            first Indian Principal of the School.
+    </div>
+    <br><br>
+    <div id="events">
+        <h2>Events</h2>
+        <div id="e1">
+            <h3 style="font-size: 1.7em;"> The World is a Work in Progress </h3>
+            <p>
+                The World is a Work in Progress is an exemplerary event that invites students, parents and staff to come together and share their visions for the future of the world.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
