@@ -7,191 +7,10 @@
     <title>Celebrating 100 years of Legacy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            background-color: rgb(255, 253, 228);
-        }
-        
-        div.site {
-            margin: 0;
-            height: 85%;
-            width: 100%;
-            /* background-image: url('abuotback.jpg'); */
-        }
-        
-        img#header {
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0em;
-            width: 100%;
-            z-index: 5;
-        }
-        
-        h2,
-        p {
-            padding: 1em;
-            color: black;
-            font-family: 'Source Serif Pro', serif;
-            font-weight: 400;
-            font-size: 1.3em;
-            width: 80%;
-            margin-right: 0;
-            /* float: r; */
-        }
-        
-        h2,
-        h3 {
-            font-weight: 400;
-            height: 7em;
-            width: fit-content;
-            float: left;
-            color: rgb(9, 14, 54);
-            font-size: 2em;
-            width: 20%;
-            font-family: 'Source Serif Pro', serif;
-        }
-        
-        h3 {
-            padding-right: 1em;
-        }
-        
-        h5 {
-            font-size: 1em;
-            font-weight: normal;
-        }
-        
-        #events {
-            background-color: rgba(255, 253, 228, 0.651) !important;
-        }
-        
-        #history,
-        #vision {
-            background-color: rgb(245, 243, 218);
-        }
-        
-        #e1,
-        #e2,
-        #e3 {
-            display: block;
-            margin-left: 20%;
-            float: right;
-        }
-        
-        #hi-img {
-            width: 1000px;
-            margin: auto
-        }
-        
-        img {
-            margin: 5px;
-        }
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        .wrapper {
-            background: #171c24;
-            position: fixed;
-            width: 100%;
-        }
-        
-        .wrapper nav {
-            position: relative;
-            display: flex;
-            max-width: calc(100% - 200px);
-            margin: 0 auto;
-            height: 70px;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        nav .content {
-            display: flex;
-            align-items: center;
-        }
-        
-        nav .content .links {
-            margin-left: 80px;
-            display: flex;
-        }
-        
-        .content .title a {
-            color: #fff;
-            font-size: 30px;
-            font-weight: 600;
-        }
-        
-        .content .links li {
-            list-style: none;
-            line-height: 70px;
-        }
-        
-        .content .links li a,
-        .content .links li label {
-            color: #fff;
-            font-size: 18px;
-            font-weight: 500;
-            padding: 9px 17px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        
-        .content .links li label {
-            display: none;
-        }
-        
-        .content .links li a:hover,
-        .content .links li label:hover {
-            background: #323c4e;
-        }
-        
-        .content .links ul {
-            position: absolute;
-            background: #171c24;
-            top: 80px;
-            z-index: -1;
-            opacity: 0;
-            visibility: hidden;
-        }
-        
-        .content .links li:hover>ul {
-            top: 70px;
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.3s ease;
-        }
-        
-        .content .links ul li a {
-            display: block;
-            width: 100%;
-            line-height: 30px;
-            border-radius: 0px!important;
-        }
-        
-        .content .links ul ul {
-            position: absolute;
-            top: 0;
-            right: calc(-100% + 8px);
-        }
-        
-        .content .links ul li {
-            position: relative;
-        }
-        
-        .content .links ul li:hover ul {
-            top: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -202,9 +21,9 @@
                 <ul class="links">
                     <li><a href="#history">History</a></li>
                     <li><a href="#events">Events</a></li>
-                    <li><a href="#vision">Vision and Mission</a></li>
-                    <li><a href="#">Future</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -226,7 +45,7 @@
         <div id="hi-img">
             <img src="hi1.png" alt="NCC March of 1987">
             <img src="hi2.png" alt="">
-            <img src="hi2.png" alt="">
+            <img src="hi3.png" style="width:320px;height: 320px;" alt="">
         </div>
     </div>
     <br><br>
@@ -259,24 +78,71 @@
     </div>
 
     <div class="site" id="vision">
-        <div id="e2" style="margin: 2em;margin-top: 3em;">
+        <blockquote style="margin-top: 1em;">
+            "Because leaders are not born, they are created"
+        </blockquote>
+        <div id="vis" style="margin: 2em;margin-top: 3em;">
             <h3 style="font-size: 1.7em;"> Our Vision
             </h3>
             <p>
                 HPS Begumpet provides holistic education, facilitates students to achieve their optimum potential and equips them to meet the challenges of life.
             </p>
         </div>
-        <div id="e2" style="margin: 4em;">
 
+        <div id="aims" style="margin: 4em;">
             <p style="position: absolute;left: 1px;">
                 <h3 style="font-size: 1.7em;"> Our Mission
                 </h3>
-                HPS deeply rooted in rich heritage and values has a sole mission of ensuring that the students proudly pass out of the school with: <br> i) Moral Values- Honesty, integrity and good judgement. <br> ii) Basic skills- Academic, creative,
-                social and personal. <br>iii) Tolerance and respect for others.
-                <br> iv) A passion for continuous learning.
+                <p style="margin-left: 5em;">
+                    HPS deeply rooted in rich heritage and values has a sole mission of ensuring that the students proudly pass out of the school with: <br> i) Moral Values- Honesty, integrity and good judgement. <br> ii) Basic skills- Academic, creative,
+                    social and personal. <br>iii) Tolerance and respect for others.
+                    <br> iv) A passion for continuous learning.
+                </p>
             </p>
         </div>
     </div>
+
+    <div class="site" id="gallery">
+        <p id="gal" style="padding: 2em;padding-bottom: 0;margin-bottom: 0;;justify-content: center;font-size: 3em !important;">Gallery</p>
+        <div onmouseover="show('History');" class="galery">
+            <a href="https://hpsbegumpet.org.in/glimpses-of-the-hps-history/">
+                <img id="gal_img" src="gal1.png" alt="">
+            </a>
+        </div>
+        <div onmouseover="show('Campus');" class="galery">
+            <a href="https://hpsbegumpet.org.in/infrastructure-gallery/">
+                <img id="gal_img" src="gal2.png" alt="">
+            </a>
+        </div>
+        <div onmouseover="show('Highlights of Centenary Celebrations');" class="galery">
+            <img id="gal_img" src="gal3.png" alt="">
+        </div>
+        <div onmouseover="show('Past Events');" class="galery">
+            <a href="https://hpsbegumpet.org.in/gallery/">
+                <img id="gal_img" src="gal4.png" alt="">
+            </a>
+        </div>
+        <div onmouseover="show('Video Gallery');" class="galery">
+            <a href="https://hpsbegumpet.org.in/gallery/#video">
+                <img id="gal_img" src="gal5.png" alt=""></a>
+        </div>
+        <div onmouseover="show('Art Gallery');" class="galery">
+            <a href="https://hpsbegumpet.org.in/art-gallery/">
+                <img id="gal_img" src="gal6.png" alt=""></div>
+        </a>
+    </div>
+    <br>
+    <footer style="margin-top: 26em;background-color: rgba(255, 247, 139, 0.185) !important;width: 100%;height: 50%;">
+        <h2>About Us</h2>
+        <p>The Hyderabad Public School is a co-educational, day & residential school in Hyderabad. One of the oldest educational institutions in the country in the youngest state of the country – it is this range that best defines The Hyderabad Public School.
+            <br> It can be best defined as: A consecrated space where knowledge and culture thrives</p>
+        <div class="social">
+            We can be found on:
+            <a href="https://www.facebook.com/HPSBegumpetOfficial/"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://hpsbegumpet.org.in/"><i class="fas fa-globe"></i></a>
+            <a href="https://www.instagram.com/hpsbegumpetofficial/?hl=en"><span class="fab fa-instagram"></span></a>
+        </div>
+    </footer>
 </body>
 
 </html>
